@@ -8,10 +8,11 @@
 <body>
     <h2>인증이 완료되었습니다!</h2>
     <p>이 창을 닫아도 됩니다.</p>
+    <p>잠시 후에 자동으로 창이 닫힙니다.</p>
     <script>
-        window.onload = function() {
+        setTimeout(function() {
             window.close();
-        }
+        }, 5000); // 5초 후 창을 닫습니다.
     </script>
 </body>
 </html>
